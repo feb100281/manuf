@@ -1,0 +1,121 @@
+{% extends 'admin/base.html' %}
+
+{% load i18n unfold %}
+
+{% block title %}
+    {% if subtitle %}
+        {{ subtitle }} |
+    {% endif %}
+
+    {{ title }} | {{ site_title|default:_('Django site admin') }}
+{% endblock %}
+
+{% block branding %}
+    {% include "unfold/helpers/site_branding.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="max-w-5xl mx-auto py-5">
+
+    <h1 class="text-4xl font-bold tracking-tight">
+
+        Добро пожаловать,
+
+        <span class="text-primary-600">
+
+            {{ request.user.first_name|default:request.user.username }}
+
+        </span>!
+
+    </h1>
+
+    <p class="mt-3 text-xl text-gray-500">
+
+        Аналитический портал бизнес-центра
+
+        <strong>«Поклонка Плэйс»</strong>
+
+    </p>
+
+    <div class="mt-8 rounded-xl border bg-white p-8 shadow-sm">
+
+        <h2 class="text-2xl font-semibold mb-4">
+
+            О системе
+
+        </h2>
+
+        <p class="mb-4">
+
+            Настоящий портал предназначен для централизованного управления,
+
+            анализа и контроля деятельности бизнес-центра
+
+            <strong>«Поклонка Плэйс»</strong>.
+
+        </p>
+
+        <p class="mb-4">
+
+            Система объединяет данные по договорам аренды, контрагентам,
+
+            объектам недвижимости, финансовым показателям и другим ключевым
+
+            аспектам деятельности комплекса, обеспечивая единую информационную
+
+            среду для принятия управленческих решений.
+
+        </p>
+
+        <p class="mb-4">
+
+            Портал предназначен для ежедневной работы:
+
+        </p>
+
+        <ul class="list-disc ml-6 space-y-2">
+
+            <li>Топ-менеджмента.</li>
+
+            <li>Финансового отдела.</li>
+
+            <li>Отдела планирования и бюджетирования.</li>
+
+            <li>Менеджеров отдела аренды.</li>
+
+            <li>Службы эксплуатации.</li>
+
+            <li>Внутренних аудиторов.</li>
+
+            <li>Аналитиков и руководителей подразделений.</li>
+
+        </ul>
+
+        <div class="mt-8 rounded-lg bg-gray-50 p-5 border">
+
+            <div class="font-semibold mb-2">
+
+                Начало работы
+
+            </div>
+
+            <p>
+
+                Для перехода к необходимому разделу используйте меню,
+
+                расположенное слева. На следующих этапах главная страница
+
+                будет дополнена ключевыми показателями эффективности,
+
+                аналитическими панелями и оперативной информацией.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{
+  "name": "manuf",
+  "version": "1.0.0",
+  "description": "-------- ## Изменения от классики !!!! --------",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feb100281/manuf.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/feb100281/manuf/issues"
+  },
+  "homepage": "https://github.com/feb100281/manuf#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

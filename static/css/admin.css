@@ -1,0 +1,79 @@
+/* Тест: если это сработало, CSS подключен */
+body {
+    --pp-primary: #7c3aed;
+}
+
+/* Основные primary-кнопки */
+.bg-primary-600 {
+    background-color: var(--pp-primary) !important;
+}
+
+/* Hover */
+.hover\:bg-primary-500:hover,
+.hover\:bg-primary-700:hover {
+    background-color: #6d28d9 !important;
+}
+
+/* Активные ссылки / текст */
+.text-primary-600,
+.text-primary-700 {
+    color: var(--pp-primary) !important;
+}
+
+/* Бордеры */
+.border-primary-600 {
+    border-color: var(--pp-primary) !important;
+}
+
+/* Focus ring */
+.ring-primary-600 {
+    --tw-ring-color: var(--pp-primary) !important;
+}
+
+/* Кликабельные значения в таблицах и формах */
+
+#content-main table a[href],
+
+#content-main .readonly a[href],
+
+#content-main .form-row a[href] {
+
+    color: rgb(37 99 235);      /* blue-600 */
+
+    font-weight: 500;
+
+    transition: color .15s ease, opacity .15s ease;
+
+}
+
+#content-main table a[href]:hover,
+
+#content-main .readonly a[href]:hover,
+
+#content-main .form-row a[href]:hover {
+
+    color: rgb(29 78 216);      /* blue-700 */
+
+}
+
+/* Dark mode */
+
+.dark #content-main table a[href],
+
+.dark #content-main .readonly a[href],
+
+.dark #content-main .form-row a[href] {
+
+    color: rgb(96 165 250);     /* blue-400 */
+
+}
+
+.dark #content-main table a[href]:hover,
+
+.dark #content-main .readonly a[href]:hover,
+
+.dark #content-main .form-row a[href]:hover {
+
+    color: rgb(147 197 253);    /* blue-300 */
+
+}
