@@ -107,6 +107,8 @@ DATABASES = {
 # ========================
 
 RAW_PARQUET_PATH = BASE_DIR / "data/parquet/raw"
+DATA_PARQUET_PATH = BASE_DIR / "data/parquet/db"
+SERVER_DB_PATH="/home/daria/manuf/db.sqlite3"
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -171,3 +173,4 @@ SERVER_USER = os.getenv("SERVER_USER")
 SERVER_PASSWORD = os.getenv("SERVER_PASSWORD")
 
 SERVER_MEDIA_PATH = os.getenv("SERVER_MEDIA_PATH")
+SERVER_DATA_PARQUET_PATH = os.getenv("SERVER_DATA_PARQUET_PATH")

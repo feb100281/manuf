@@ -52,3 +52,4 @@ brew install ghostscript на мак
 sudo apt install ghostscript на сервер
 
 /Users/pavelustenko/pr
+/Users/pavelustenko/Library/CloudStorage/Dropbox/Remark_app/Manu.db

@@ -1,9 +1,6 @@
-import json
 import traceback
-
 from django.core.management import BaseCommand, call_command
 from django.utils import timezone
-
 from utils.models import Jobs, JobStatus
 
 

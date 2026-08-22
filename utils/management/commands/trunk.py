@@ -1,11 +1,6 @@
 from django.core.management.base import BaseCommand
-import duckdb
-from django.conf import settings
-import pandas as pd
 from utils.models import Jobs, JobStatus
 from django.utils import timezone
-from pathlib import Path
-from django.apps import apps
 from django.db import connection
 
 
